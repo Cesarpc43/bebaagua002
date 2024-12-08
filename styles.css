@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #0288d1;
+    margin-bottom: 2rem;
+}
+
+.water-tracker {
+    margin-bottom: 2rem;
+}
+
+.progress-container {
+    background-color: #e1f5fe;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #29b6f6, #0288d1);
+    transition: width 0.3s ease;
+}
+
+.water-info {
+    color: #0288d1;
+    margin: 0.5rem 0;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0288d1;
+}
+
+.reset-btn {
+    background-color: #ef5350;
+    width: 100%;
+}
+
+.reset-btn:hover {
+    background-color: #d32f2f;
+}

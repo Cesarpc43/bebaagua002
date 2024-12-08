@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beba Água - Seu Assistente de Hidratação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💧 Beba Água</h1>
+        <div class="water-tracker">
+            <div class="progress-container">
+                <div class="progress-bar" id="waterProgress"></div>
+            </div>
+            <p class="water-info">Meta diária: <span id="waterGoal">2000</span>ml</p>
+            <p class="water-info">Consumido: <span id="waterConsumed">0</span>ml</p>
+        </div>
+        <div class="controls">
+            <button onclick="addWater(200)" class="btn">+ 200ml</button>
+            <button onclick="addWater(300)" class="btn">+ 300ml</button>
+            <button onclick="addWater(500)" class="btn">+ 500ml</button>
+        </div>
+        <button onclick="resetWater()" class="btn reset-btn">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
